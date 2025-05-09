@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace Utility;
+namespace OliveStudio;
 
 /// <summary>
 /// Provides guard clauses for validating method arguments.
