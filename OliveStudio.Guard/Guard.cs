@@ -1,6 +1,4 @@
-﻿using System.Linq.Expressions;
-
-namespace OliveStudio;
+﻿namespace OliveStudio;
 
 /// <summary>
 /// Provides guard clauses for validating method arguments.
@@ -51,7 +49,7 @@ public static class Guard
     /// <exception cref="InvalidOperationException">Thrown if the integer is within the range.</exception>
     public static int ThrowIfIntegerNotInRange(int item, int start, int end)
     {
-        if (item >= start && item <= end)
+        if (item < start || item > end)
         {
             throw new InvalidOperationException();
         }
